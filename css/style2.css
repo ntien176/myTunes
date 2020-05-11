@@ -7,7 +7,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
   font-family: "Roboto", sans-serif;
+
 }
 ul {
   margin: 0;
@@ -269,6 +272,9 @@ footer {
 .topic__item a {
   text-decoration: none;
   color: #aaa;
+}
+.topic__item a:hover {
+  text-decoration: underline;
 }
 /* copyright */
 .copyright {
