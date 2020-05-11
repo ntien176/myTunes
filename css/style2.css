@@ -201,10 +201,12 @@ main {
 /* Gift card */
 .gift {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 10px;
   font-family: 'PT Sans', sans-serif;
+
 }
 
 .image img {
@@ -225,4 +227,31 @@ main {
 }
 .info a {
   text-decoration: none;
+
+}
+/* Footer */
+footer {
+  background-color: #252529;
+
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  font-family: 'PT Sans', sans-serif;
+}
+.topic h3 {
+  padding: 2rem 0;
+  text-align: left;
+  color: #FFf;
+  line-height: 2rem;
+  font-weight: 100;
+}
+.topic__item {
+  list-style: none;
+  text-align: left;
+}
+.topic__item a {
+  text-decoration: none;
+  color: #aaa;
 }
