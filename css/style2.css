@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Quicksand&family=Roboto:wght@300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 /* Style */
 * {
   padding: 0;
@@ -21,7 +21,7 @@ nav {
   position: fixed;
   font-size: 0.95rem;
 }
-.control-btn { 
+.control-btn {
   position: relative;
   display: none;
 }
@@ -39,7 +39,7 @@ nav {
   opacity: 0;
 }
 input:checked .show {
-    display: block;
+  display: block;
 }
 
 .navbar-list {
@@ -94,12 +94,12 @@ header {
   .header-container p {
     display: none;
   }
-  nav { 
+  nav {
     height: 45px;
     background-color: transparent;
   }
   .show {
-      display: none;
+    display: none;
   }
   .navbar-list {
     display: flex;
@@ -120,8 +120,8 @@ header {
   .display-sm-none {
     display: none;
   }
-  .control-btn { 
-      display: block;
+  .control-btn {
+    display: block;
   }
 }
 
@@ -156,4 +156,21 @@ main {
   font-size: 1.1rem;
   line-height: 1.6rem;
   padding-bottom: 30px;
+}
+.main-container__btn {
+  border: 0;
+  background-color: #b70415;
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.1rem;
+  height: 3.7rem;
+  width: 12rem;
+  margin-bottom: 1.7rem;
+}
+.main-container__btn:hover {
+  background-color: #c00013;
+}
+.main-container__note img {
+  margin-top: 1.3rem;
+  width: 80vw;
 }
