@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Quicksand&family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 /* Style */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 ul {
   margin: 0;
@@ -108,7 +109,10 @@ header {
     display: none;
     animation: fadeIn linear 0.4s;
     color: white;
-    
+  }
+  .show li {
+    margin: 0 auto
+
   }
   @keyframes fadeIn {
     from {
@@ -140,7 +144,9 @@ header {
   label[for="input-checkbox"] {
     display: block;
   }
-  
+  .gift {
+    display: block !important ;
+  }
 }
 
 /* main content */
@@ -191,4 +197,32 @@ main {
 .main-container__note img {
   margin-top: 1.3rem;
   width: 80vw;
+}
+/* Gift card */
+.gift {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.image img {
+  width: 100%;
+}
+.info {
+  text-align: left;
+}
+.info h3 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.info p {
+  padding-bottom: 1.2rem;
+}
+.info i {
+  margin-top: 1rem;
+}
+.info a {
+  text-decoration: none;
 }
