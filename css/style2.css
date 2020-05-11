@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Quicksand&family=Roboto:wght@300;400;500&display=swap');
+
+/* Style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+nav {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 37px;
+  background-color: #333333;
+  color: white;
+  position: fixed;
+  font-size: 0.95rem;
+}
+.control-btn { 
+  position: relative;
+  display: none;
+}
+.control-btn i {
+  float: left;
+  font-size: 2rem;
+  margin: 10px;
+}
+.control-btn input {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+}
+input:checked .show {
+    display: block;
+}
+
+.navbar-list {
+  display: inline-block;
+  height: 45px;
+  width: 100px;
+}
+.navbar-link {
+  display: inline-block;
+  height: 45px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  line-height: 45px;
+  box-sizing: border-box;
+}
+.navbar-link:hover {
+  background-color: #444444;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/showcase.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin: auto;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+.container {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.header-container h1 {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+.header-container h3 {
+  font-size: 1.9rem;
+  margin-bottom: 3rem;
+}
+.header-container p {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 576px) {
+  .header-container p {
+    display: none;
+  }
+  nav { 
+    height: 45px;
+    background-color: transparent;
+  }
+  .show {
+      display: none;
+  }
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99% !important ;
+    height: 37px;
+  }
+  .navbar-link {
+    width: 99%;
+    line-height: 37px;
+  }
+  .navbar-link:hover {
+    background-color: transparent;
+    border: 2px solid #cecece;
+  }
+  .display-sm-none {
+    display: none;
+  }
+  .control-btn { 
+      display: block;
+  }
+}
+
+/* main content */
+main {
+  background-color: #252529;
+  width: 100%;
+  color: white;
+  height: auto;
+}
+.main-container__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Acme', sans-serif;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.main-container__title i {
+  font-size: 2.5rem;
+}
+.main-container__title h1 {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+.main-container__note h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+.main-container__note p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  padding-bottom: 30px;
+}
