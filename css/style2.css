@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 ul {
   margin: 0;
@@ -22,10 +23,10 @@ nav {
   position: fixed;
   font-size: 1rem;
 }
-label[for="input-checkbox"] {
+label[for='input-checkbox'] {
   display: none;
 }
-input[id="input-checkbox"] {
+input[id='input-checkbox'] {
   display: none;
 }
 .control-icon {
@@ -84,7 +85,7 @@ header {
   margin: 0 auto;
 }
 .header-container h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1.5rem;
 }
 .header-container h3 {
@@ -111,8 +112,7 @@ header {
     color: white;
   }
   .show li {
-    margin: 0 auto
-
+    margin: 0 auto;
   }
   @keyframes fadeIn {
     from {
@@ -138,14 +138,25 @@ header {
     background-color: transparent;
     border: 2px solid #cecece;
   }
+  .header-container h1 {
+    font-size: 3rem;
+  }
   .display-sm-none {
     display: none;
   }
-  label[for="input-checkbox"] {
+  label[for='input-checkbox'] {
     display: block;
   }
   .gift {
     display: block !important ;
+  }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important ;
   }
 }
 
@@ -203,10 +214,9 @@ main {
   margin-top: 3rem;
   margin-bottom: 3rem;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   font-family: 'PT Sans', sans-serif;
-
 }
 
 .image img {
@@ -227,31 +237,46 @@ main {
 }
 .info a {
   text-decoration: none;
-
 }
 /* Footer */
 footer {
   background-color: #252529;
-
+  padding-bottom: 2rem;
 }
 .menu {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
   font-family: 'PT Sans', sans-serif;
 }
 .topic h3 {
-  padding: 2rem 0;
+  padding: 2rem 0 0.5rem 0;
   text-align: left;
-  color: #FFf;
+  color: #fff;
   line-height: 2rem;
   font-weight: 100;
+}
+.hr-footer {
+  border: 0.4px solid rgb(155, 155, 155);
+  width: 90%;
+  margin-bottom: 0.5rem;
 }
 .topic__item {
   list-style: none;
   text-align: left;
+  font-size: 0.95rem;
 }
 .topic__item a {
   text-decoration: none;
   color: #aaa;
 }
+/* copyright */
+.copyright {
+  background-color: #333333;
+  color: #fff;
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+  font-weight: 100;
+}
+
